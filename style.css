@@ -1,0 +1,239 @@
+body {
+  font-family: Arial, sans-serif;
+  
+
+}
+
+.container {
+  margin: 0 auto;
+  padding: 50px;
+  max-width: 800px;
+  text-align: center;
+}
+.main-title{
+  font-family: 'Great Vibes', cursive;
+  color: hotpink;
+}
+.timer-heading{
+  font-size: 40px !important;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+}
+
+
+.countdown-item>p{
+  color: rgb(238, 57, 148) !important;
+}
+
+.countdown-item span {
+  font-size: 60px;
+  color: #95177e;
+}
+
+.countdown-item p {
+  font-size: 20px;
+  margin: 0;
+}
+
+
+.message p {
+  font-size: 20px;
+  color: #95177e;
+font-family: cursive;
+  margin: 0;
+}
+
+.rsvp {
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #f124d2;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 30px;
+}
+
+button:hover{
+  background-color: #c623ae;
+ 
+}
+button>a:hover{
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.lovely {
+  font-size: 35px !important ;
+  color: #d770bf !important;
+  font-family: "Great Vibes", cursive;
+  margin: 0;
+  margin-top: 20px;
+}
+.details-ul {
+  list-style: none;
+  list-style-type: none;
+  color: rgb(238, 57, 148) !important;
+  margin: 40px;
+}
+.wed-info {
+  color: rgb(234, 15, 234);
+  margin: 10px;
+}
+.time-stamps {
+  padding: 5px;
+  color: rgb(199, 16, 150);
+  font-family: cursive;
+  text-transform: uppercase;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.countdown-item {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .countdown-item {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .countdown-timer {
+    flex-wrap: wrap;
+  }
+
+  .countdown-item {
+    width: 100%;
+    font-size: 1rem;
+    margin: 10px;
+  }
+  .wed-info {
+    margin: 10px;
+  }
+  .time-stamps {
+    font-size: 13px;
+    display: block;
+  }
+}
+.bubbles-container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  background-color: #95d7ed;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  animation: bubble-blow 20s ease-in-out infinite;
+ bottom:  0;
+}
+
+
+.bubble:nth-child(1) {
+  left: 10%;
+  animation-duration: 15s;
+  animation-delay: 0.5s;
+ 
+}
+
+.bubble:nth-child(2) {
+  left: 20%;
+  animation-duration: 18s;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(3) {
+  left: 30%;
+  animation-duration: 16s;
+  animation-delay: 1.5s;
+}
+
+.bubble:nth-child(4) {
+  left: 40%;
+  animation-duration: 14s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(5) {
+  left: 50%;
+  animation-duration: 17s;
+  animation-delay: 2.5s;
+}
+
+.bubble:nth-child(6) {
+  left: 60%;
+  animation-duration: 15s;
+  animation-delay: 3.2s;
+}
+
+.bubble:nth-child(7) {
+  left: 70%;
+  animation-duration: 19s;
+  animation-delay: 3s;
+}
+
+.bubble:nth-child(8) {
+  left: 80%;
+  animation-duration: 16s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(9) {
+  left: 90%;
+  animation-duration: 18s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(10) {
+  left: 100%;
+  animation-duration: 20s;
+  animation-delay: 4s;
+}
+
+@keyframes bubble-blow {
+  0% {
+    transform: translateY(-100) scale(1);
+    opacity: 0.8;
+  }
+  40% {
+    transform: translateY(-200px) scale(1.2);
+    opacity: 0.4;
+  }
+50%{
+  transform: translateY(-300px) scale(1.2);
+    opacity: 0.4;
+}
+60%{
+  transform: translateY(-500px) scale(1.2);
+  opacity: 0.2;
+}
+70%{
+  transform: translateY(-700px) scale(1.2);
+  opacity: 0.3;
+  background-color: hotpink;
+}
+}
