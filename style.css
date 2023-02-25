@@ -17,6 +17,25 @@ body {
 .timer-heading{
   font-size: 40px !important;
 }
+.holder {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.genders {
+  font-family: "Great Vibes", cursive;
+  width: fit-content;
+  border: 1px solid rgb(224, 182, 212);
+  border-radius: 70%;
+  color: #ea6dcd;
+  border-style: dotted;
+  background-color: #f0daeabb;
+  letter-spacing: 3px;
+
+}
+.genders>h2{
+  color: #95177e;
+}
 
 .countdown-timer {
   display: flex;
